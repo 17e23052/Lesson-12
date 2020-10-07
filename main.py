@@ -5,6 +5,10 @@ print("Guess a number between 1 and 10:")
 guess = int(input())
 while guess != number:
   print("Incorrect.")
+  if guess < number:
+    print("Go higher.")
+  elif guess > number:
+    print("Go lower.")
   print("Guess a number between 1 and 10:")
   guesses = guesses + 1
   guess = int(input())
