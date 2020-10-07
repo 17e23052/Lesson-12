@@ -7,6 +7,9 @@ while guess != 4:
   print("Guess a number between 1 and 10:")
   guesses = guesses + 1
   guess = int(input())
-print("Well done!")
-guesses = guesses + 1
-print(f"You guessed it in {guesses} attempts!")
+if guesses <= 2:
+  print("Well done!")
+  guesses = guesses + 1
+  print(f"You guessed it in {guesses} attempts!")
+else:
+  print("You failed. Better luck next time!")
